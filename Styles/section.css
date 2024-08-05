@@ -28,6 +28,7 @@
             background-color: var(--gray-300);
             padding: 1rem;
             border-radius: 0.75rem;
+            border: 1.5px solid transparent;
 
             & img {
                 border-radius: 0.5rem;
@@ -43,6 +44,11 @@
                 margin-top: 0.5rem;
                 font: var(--text-maven-sm);
                 color: var(--gray-500);
+            }
+
+            &:hover {
+                border: 1.5px solid var(--gray-400);
+                cursor: pointer;
             }
         }
     }
@@ -138,16 +144,66 @@
         justify-content: space-between;
         align-content: center;
 
-        border-radius: .5rem;
-        
+        border-radius: 0.5rem;
+        border: 1.5px solid transparent;
+
         & > div {
             display: flex;
             align-items: center;
 
+            a.contact-link {
+                --icon: "";
+                background-image: var(--icon);
+                width: 1.75rem;
+                height: 1.75rem;
+                display: block;
+
+                &[aria-label="linkedin"] {
+                    --icon: url(../assets/icons/LinkedinLogo.svg);
+                }
+
+                &[aria-label="instagram"] {
+                    --icon: url(../assets/icons/InstagramLogo.svg);
+                }
+
+                &[aria-label="github"] {
+                    --icon: url(../assets/icons/github.svg);
+                }
+
+                &[aria-label="email"] {
+                    --icon: url(../assets/icons/EnvelopeSimple.svg);
+                }
+            }
+
             & span {
+                font: var(--text-maven-md);
+                color: var(--gray-500);
                 margin-left: 0.75rem;
             }
         }
 
+        &:hover {
+            border: 1.5px solid var(--blue);
+            cursor: pointer;
+
+            a.contact-link {
+                &[aria-label="linkedin"] {
+                    --icon: url(../assets/icons/linkedin-hover.svg);
+                }
+
+                &[aria-label="instagram"] {
+                    --icon: url(../assets/icons/instagram-hover.svg);
+                }
+
+                &[aria-label="github"] {
+                    --icon: url(../assets/icons/github-hover.svg);
+                }
+
+                &[aria-label="email"] {
+                    --icon: url(../assets/icons/envelope-hover.svg);
+                }
+
+            }
+        }
     }
 }
