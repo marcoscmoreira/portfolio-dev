@@ -1,0 +1,49 @@
+:root {
+    --red: #E3646E;
+    --purple: #BB72E9;
+    --blue: #3996DB;
+    --green: #82BC4F;
+    --yellow: #EABD5F;
+    --gray-100: #0D0E11;
+    --gray-200: #16181D;
+    --gray-300: #292C34;
+    --gray-400: #878EA1;
+    --gray-500: #C0C4CE;
+    --gray-600: #E2E4E9;
+
+    --ff-asap: 'Asap', sans-serif;
+    --ff-inconsolata: 'Inconsolata', sans-serif;
+    --ff-maven-pro: 'Maven Pro', sans-serif;
+
+    --text-asap-lg: 700 3.5rem/120% var(--ff-asap);
+    --text-asap-md: 700 1.5rem/120% var(--ff-asap) ;
+    --text-asap-sm: 700 1rem/120% var(--ff-asap);
+
+    --text-inconsolata-subtitle: 400 1.25rem/120% var(--ff-inconsolata);
+
+    --text-maven-md: 400 1rem/140% var(--ff-maven-pro);
+    --text-maven-sm: 400 0.875rem/140% var(--ff-maven-pro);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-asap);
+    background-color: var(--gray-200);
+    color: var(--gray-600);
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
