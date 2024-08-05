@@ -1,0 +1,31 @@
+.grid {
+    display: grid;
+}
+
+.grid-flow-columns {
+    grid-auto-flow: column;
+}
+
+.grid-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-1{
+    gap: 1rem;
+}
+
+.gap-1\.5{
+    gap: 1.5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-columns {
+    flex-direction: column;
+}
+
+.center {
+    align-items: center;
+}

@@ -1,0 +1,54 @@
+#jobs {
+    margin-inline: auto;
+    max-width: 65rem;
+    margin-bottom: 9rem;
+
+    header {
+        align-items: center;
+
+        & span {
+            font: var(--text-inconsolata-subtitle);
+            color: var(--red);
+            /* margin-top: 4.5rem; */
+        }
+
+        & h2 {
+            font: var(--text-asap-md);
+            color: var(--gray-600);
+            margin-top: 0.5rem;
+        }
+
+    }
+
+    main {
+        margin-top: 3.5rem;
+
+        grid-auto-flow: row;
+
+        & .card-container {
+            background-color: var(--gray-300);
+            padding: 1rem;
+            border-radius: 0.75rem;
+
+            & img {
+                border-radius: 0.5rem;
+            }
+
+            & small {
+                margin-top: 1.25rem;
+                font: (--text-maven-sm);
+                color: var(--gray-600);
+            }
+    
+            & span {
+                margin-top: 0.5rem;
+                font: var(--text-maven-sm);
+                color: var(--gray-500);
+            }
+        }
+
+        
+    }
+
+
+}

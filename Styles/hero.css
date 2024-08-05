@@ -56,7 +56,7 @@
             margin-top: 0.5rem;
         }
 
-        & p:nth-child(3) {
+        & small {
             font: var(--text-maven-sm);
             color: var(--gray-500);
         }
