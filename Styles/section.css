@@ -17,7 +17,6 @@
             color: var(--gray-600);
             margin-top: 0.5rem;
         }
-
     }
 
     main {
@@ -39,18 +38,14 @@
                 font: (--text-maven-sm);
                 color: var(--gray-600);
             }
-    
+
             & span {
                 margin-top: 0.5rem;
                 font: var(--text-maven-sm);
                 color: var(--gray-500);
             }
         }
-
-        
     }
-
-
 }
 
 .background {
@@ -58,11 +53,10 @@
 }
 
 #type-jobs {
-
     margin-inline: auto;
     max-width: 65rem;
     height: 30rem;
-    
+
     header {
         align-items: center;
 
@@ -77,7 +71,6 @@
             color: var(--gray-600);
             margin-top: 0.5rem;
         }
-
     }
 
     & main {
@@ -98,10 +91,63 @@
             & small {
                 color: var(--gray-500);
                 font: var(--text-maven-sm);
-                margin-top: .5rem;
+                margin-top: 0.5rem;
             }
         }
     }
+}
 
+.background-contato {
+    background-image: url(../assets/images/Background_Contacts.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+#contact {
+    max-width: 26.25rem;
+    margin: 8rem auto 12.5rem;
+    /* height: 49.187rem; */
+
+    header {
+        align-items: center;
+
+        & span {
+            font: var(--text-inconsolata-subtitle);
+            color: var(--purple);
+        }
+
+        & h2 {
+            font: var(--text-asap-md);
+            color: var(--gray-600);
+            margin-top: 0.5rem;
+        }
+
+        & small {
+            font: var(--text-maven-md);
+            color: var(--gray-500);
+            margin: 0.5rem 0 3rem;
+        }
+    }
+
+    .container-contato {
+        width: 100%;
+        background-color: var(--gray-300);
+        padding: 1.25rem;
+
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+
+        border-radius: .5rem;
+        
+        & > div {
+            display: flex;
+            align-items: center;
+
+            & span {
+                margin-left: 0.75rem;
+            }
+        }
+
+    }
 }
